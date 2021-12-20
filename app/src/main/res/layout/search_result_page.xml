@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/search_result_prev_view"
+                android:layout_width="38dp"
+                android:layout_height="66dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="69dp"
+                android:src="@drawable/search_page_prev_button"
+                app:layout_constraintBottom_toTopOf="@+id/attraction_name_view"
+                app:layout_constraintEnd_toStartOf="@+id/home_icon_view"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/home_icon_view"
+                android:layout_width="57dp"
+                android:layout_height="78dp"
+                android:layout_marginStart="257dp"
+                android:layout_marginTop="21dp"
+                android:layout_marginEnd="43dp"
+                android:layout_marginBottom="86dp"
+                android:src="@drawable/home_button"
+                app:layout_constraintBottom_toTopOf="@+id/output_attraction_name_view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/search_result_prev_view"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/address_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="44dp"
+                android:layout_marginEnd="30dp"
+                android:text="주소:"
+                app:layout_constraintEnd_toStartOf="@+id/output_address_view"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/attraction_name_view" />
+
+            <TextView
+                android:id="@+id/attraction_name_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="44dp"
+                android:text="명소명:"
+                app:layout_constraintBottom_toTopOf="@+id/address_view"
+                app:layout_constraintEnd_toStartOf="@+id/output_attraction_name_view"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/search_result_prev_view" />
+
+            <TextView
+                android:id="@+id/phone_no_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="44dp"
+                android:text="번호:"
+                app:layout_constraintBottom_toTopOf="@+id/attraction_name2"
+                app:layout_constraintEnd_toStartOf="@+id/output_phone_no_view"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/address_view" />
+
+            <TextView
+                android:id="@+id/output_attraction_name_view"
+                android:layout_width="257dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="86dp"
+                android:layout_marginEnd="62dp"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/home_icon_view" />
+
+            <TextView
+                android:id="@+id/output_address_view"
+                android:layout_width="277dp"
+                android:layout_height="57dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="21dp"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@+id/address_view"
+                app:layout_constraintTop_toBottomOf="@+id/output_attraction_name_view" />
+
+            <TextView
+                android:id="@+id/output_phone_no_view"
+                android:layout_width="245dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="74dp"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/phone_no_view"
+                app:layout_constraintTop_toBottomOf="@+id/output_address_view" />
+
+            <TextView
+                android:id="@+id/phone_no_view2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginBottom="151dp"
+                android:text="번호:"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/output_phone_no_view2"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/output_address_view2"
+                android:layout_width="256dp"
+                android:layout_height="54dp"
+                android:layout_marginStart="29dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="67dp"
+                android:layout_marginBottom="19dp"
+                app:layout_constraintBottom_toTopOf="@+id/output_phone_no_view2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/address_view2"
+                app:layout_constraintTop_toBottomOf="@+id/output_attraction_name_view2" />
+
+            <TextView
+                android:id="@+id/output_phone_no_view2"
+                android:layout_width="254dp"
+                android:layout_height="44dp"
+                android:layout_marginEnd="68dp"
+                android:layout_marginBottom="133dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/output_attraction_name_view2"
+                android:layout_width="255dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="65dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/attraction_name2"
+                app:layout_constraintTop_toBottomOf="@+id/output_phone_no_view" />
+
+            <TextView
+                android:id="@+id/address_view2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="29dp"
+                android:layout_marginEnd="29dp"
+                android:layout_marginBottom="41dp"
+                android:text="주소:"
+                app:layout_constraintBottom_toTopOf="@+id/phone_no_view2"
+                app:layout_constraintEnd_toStartOf="@+id/output_address_view2"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/attraction_name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="50dp"
+                android:text="명소명:"
+                app:layout_constraintBottom_toTopOf="@+id/address_view2"
+                app:layout_constraintEnd_toStartOf="@+id/output_attraction_name_view2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/phone_no_view" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/home_button"
+                android:layout_width="57dp"
+                android:layout_height="67dp"
+                android:layout_marginStart="309dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="45dp"
+                android:layout_marginBottom="1dp"
+                android:background="#00ff0000"
+                app:layout_constraintBottom_toTopOf="@+id/search_bg_img"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/search_result_prev_button"
+                android:layout_width="49dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="76dp"
+                android:layout_marginEnd="328dp"
+                android:background="#00FF0000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/attraction_join_button"
+                android:layout_width="407dp"
+                android:layout_height="199dp"
+                android:layout_marginTop="42dp"
+                android:layout_marginBottom="364dp"
+                android:background="#00FF0000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/search_result_prev_button" />
+
+            <ImageView
+                android:id="@+id/search_bg_img"
+                android:layout_width="291dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="87dp"
+                android:layout_marginEnd="37dp"
+                android:layout_marginBottom="42dp"
+                android:src="@drawable/search_icon_bg"
+                app:layout_constraintBottom_toTopOf="@+id/attraction_join_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/search_result_prev_button"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+</LinearLayout>
